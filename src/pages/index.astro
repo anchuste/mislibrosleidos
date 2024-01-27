@@ -1,9 +1,10 @@
 ---
 import Layout from '../layouts/Layout.astro';
 import Card from '../components/Card.astro';
+import OtherCard from '../components/OtherCard.astro';
 ---
 
-<Layout title="Welcome to Astro.">
+<Layout title="¡Libros leídos!">
 	<main>
 		<svg
 			class="astro-a"
@@ -33,32 +34,61 @@ import Card from '../components/Card.astro';
 				</linearGradient>
 			</defs>
 		</svg>
-		<h1>Welcome to <span class="text-gradient">Astro</span></h1>
+		<h1>Bienvenido a <br><span class="text-gradient">¡¡Libros-leídos!!</span></h1>
+		<!--
 		<p class="instructions">
 			To get started, open the directory <code>src/pages</code> in your project.<br />
 			<strong>Code Challenge:</strong> Tweak the "Welcome to Astro" message above.
 		</p>
+		 -->
+		
+		<p class="instructions">
+			A continuación, se muestra el listado de libros leídos en el <strong>año 2023:</strong>
+		</p>
+		
 		<ul role="list" class="link-card-grid">
-			<Card
-				href="https://docs.astro.build/"
-				title="Documentation"
-				body="Learn how Astro works and explore the official API docs."
+			<OtherCard
+				href=""
+				title="El problema final"
+				body="Conoce un poco más sobre mi y mi biblioteca"
+				imgUrl="https://m.media-amazon.com/images/S/aplus-media-library-service-media/9dff222d-ac1b-48e8-9dbc-1d03386f6feb.__CR0,0,300,400_PT0_SX300_V1___.jpg"
+				year="2024"
+				month="Enero"
 			/>
-			<Card
-				href="https://astro.build/integrations/"
-				title="Integrations"
-				body="Supercharge your project with new frameworks and libraries."
+			<OtherCard
+				href=""
+				title="La isla del tesoro"
+				body="Conoce un poco más sobre mi y mi biblioteca"
+				imgUrl="https://m.media-amazon.com/images/I/71Xe94-ddFL._SY466_.jpg"
+				year=""
+				month=""
 			/>
-			<Card
-				href="https://astro.build/themes/"
-				title="Themes"
-				body="Explore a galaxy of community-built starter themes."
+			<OtherCard
+				href=""
+				title="Harry Potter and the chamber of secrets"
+				body="Conoce un poco más sobre mi y mi biblioteca"
+				imgUrl="https://m.media-amazon.com/images/I/51bHVhD11hL._SY445_SX342_.jpg"
+				year=""
+				month=""				
 			/>
-			<Card
-				href="https://astro.build/chat/"
-				title="Community"
-				body="Come say hi to our amazing Discord community. ❤️"
+			<OtherCard
+				href=""
+				title="Of mice and men"
+				body="Conoce un poco más sobre mi y mi biblioteca"
+				imgUrl="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRrckDrLzbiLaN9qB78D-w7A7IrEDcfttG4_g&usqp=CAU"
+				year=""
+				month=""
 			/>
+			
+
+			
+
+			
+
+
+			
+
+
 		</ul>
 	</main>
 </Layout>
